@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+}
+
+.hero {
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 874px) {
+
+    .hero .home {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .container{
+        border: 1px solid #DBDBDB;
+    }
+
+    .new{
+        border: 1px solid #DBDBDB;
+    }
+}
+
+@media screen and (min-width: 875px) {
+    .home {
+        height: 634px;
+        width: 465px;
+        position: relative;
+    }
+
+
+    .home .img1 {
+        position: absolute;
+    }
+
+    .home .img2,
+    .img3,
+    .img4,
+    .img5 {
+        position: absolute;
+        top: 27px;
+        right: 58px;
+        opacity: 0;
+        animation: change-img-anim 24s infinite;
+    }
+
+
+    .img2 {
+        animation-delay: 0s;
+    }
+
+    .img3 {
+        animation-delay: 4s;
+    }
+
+    .img4 {
+        animation-delay: 8s;
+    }
+
+    .img5 {
+        animation-delay: 12s;
+    }
+
+
+    @keyframes change-img-anim {
+        0% {
+            opacity: 0;
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        90% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+
+.hero2 {
+    flex-direction: column;
+}
+
+.container {
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 340px;
+    height: 418px;
+    /* border: 1px solid #DBDBDB; */
+
+}
+
+.container img {
+    margin-top: 45px;
+}
+
+
+.inputs {
+    margin: 4.5px;
+}
+
+#user,
+#pass {
+    width: 250px;
+    padding: 9px;
+    border: 1px solid #DBDBDB;
+    background: #FAFAFA;
+}
+
+
+#user {
+    margin-top: 11px;
+}
+
+#login-btn {
+    border: none;
+    background: rgb(76, 181, 249);
+    border-radius: 10px;
+    width: 268px;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+
+.sepration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.st {
+    margin: 10px;
+    height: 0.4px;
+    width: 108px;
+    background: #DBDBDB;
+}
+
+.ed {
+    margin: 10px;
+    height: 0.4px;
+    width: 108px;
+    background: #DBDBDB;
+}
+
+.fb{
+    display: flex;
+    margin: 10px;
+}
+
+.fb a{
+    text-decoration: none; 
+    font-size: 12.5px;
+    font-weight: 500;
+    color: #385185;
+}
+
+.fb img{
+    margin: 0;
+    padding: 0 7px;
+}
+
+.forgot{
+    position: relative;
+    top: 12px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 11px;
+}
+
+
+/* Second box */
+.new {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    height: 58px;
+    /* border: 1px solid #DBDBDB; */
+
+}
+
+.new a {
+    text-decoration: none;
+    color: rgb(13, 141, 226);
+}
+
+
+.bottom span {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.dwnd{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.dwnd img {
+    height: 40px;
+    padding: 5px;
+}
